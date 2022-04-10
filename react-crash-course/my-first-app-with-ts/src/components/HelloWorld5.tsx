@@ -29,7 +29,7 @@ const HelloWorld5: React.FC<Props> = (props) => {
     }, [count]);
     return (
         <div>
-            <p>Hello {name}. Greetings from from React.</p>
+            <p>Hello {name}. Greetings from React.</p>
             <p>
                 <input type="text" placeholder="Write a name here..."
                     name="name_to_greet" onInput={changeNameToGreet} />
