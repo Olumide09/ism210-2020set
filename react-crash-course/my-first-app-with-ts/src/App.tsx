@@ -5,6 +5,7 @@ const App: React.FC = () => {
   return (
     <div>
       <HelloWorld />
+      <HelloWorld2 name="Olumide"/>
     </div>
   );
 }
