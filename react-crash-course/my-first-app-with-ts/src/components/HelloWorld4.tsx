@@ -12,7 +12,7 @@ const HelloWorld4: React.FC<Props> = (props) => {
     }
     return (
         <div>
-            <p>Hello {name}. Greetings from React.</p>
+            <p>Hello {name}. Greetings from React (HelloWorld4.)</p>
             <p>
                 <input type="text" placeholder="Write a name here..." name="name_to_greet"
                     onInput={changeNameToGreet} />
