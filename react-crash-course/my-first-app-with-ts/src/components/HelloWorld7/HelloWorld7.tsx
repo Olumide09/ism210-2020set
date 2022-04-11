@@ -11,7 +11,7 @@ const HelloWorld7: React.FC<Props> = (props) => {
     let userIdInput: any = useRef(); //any is used here to accommodate possible undefined.
 
     //to be called when refetch is required. User id is read from input with ref attribute name
-    userIdInput
+    //userIdInput
     const refetchData = async () => {
         try {
             let response = await fetch(`https://jsonplaceholder.typicode.com/users/$
@@ -49,7 +49,7 @@ const HelloWorld7: React.FC<Props> = (props) => {
             <p>Hello {props.name}. Greetings from React.</p>
             <p>
                 <input ref={userIdInput} type="number"
-                    placeholder="UserId (1 to 10) here" />
+                    placeholder="User-Id (1 to 10) here" />
             </p>
             <p>
                 <button onClick={refetchData}>
