@@ -10,15 +10,24 @@ import HelloWorld7 from './components/HelloWorld7/HelloWorld7';
 import HelloWorld8 from './components/HelloWorld8';
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="Container">
+      <div className="Column1">
+      <HelloWorld8 />
+      </div>
       <HelloWorld />
       <HelloWorld2 name="Olumide"/>
       <HelloWorld3 name="Demilade"/>
+      <div className="Column2">
       <HelloWorld4 />
+      </div>
+    
       <HelloWorld5 />
       <HelloWorld6 />
+      <div className="Column3">
       <HelloWorld7 />
-      <HelloWorld8 />
+      </div>
+      
+      
 
       
 
