@@ -23,6 +23,13 @@ const HelloWorld4: React.FC<Props> = (props) => {
                 <button onClick={() => setCount(count + 1)}>
                     Click me
                 </button>
+                <button onClick={() => setCount(count - 1)}>
+                    Decrease 
+                </button>
+                <button onClick={() => setCount (0)}>
+                    Reset
+
+                </button>
             </p>
 
         </div>
