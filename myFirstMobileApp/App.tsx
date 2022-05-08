@@ -1,26 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import Component1 from './src/components/Component1';
 const App: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Olumide Olaoye is the G.O.A.T!</Text>
+      <Component1 />
     </View>
   );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightgreen',
+    backgroundColor: 'lightblue',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
-    fontSize: 20,
-    backgroundColor: 'lightgreen',
-    padding: 6,
-    alignItems: 'center'
   }
 });
 export default App;
