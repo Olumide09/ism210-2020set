@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const App: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Olumide Olaoye is the Greatest Of All Time!</Text>
+      <Text style={styles.text}>Olumide Olaoye is the G.O.A.T!</Text>
     </View>
   );
 }
@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    color: '#95c980',
+    color: '#fff',
     fontSize: 20,
-    backgroundColor: 'white',
+    backgroundColor: 'lightgreen',
     padding: 6,
     alignItems: 'center'
   }
