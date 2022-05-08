@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Initial Code Adjusted to ES6+ and Typescript by Me!</Text>
+      <Text>Olumide Olaoye is the best then now and forever!</Text>
       <StatusBar style="auto" />
     </View>
   );
