@@ -1,10 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-const Component1: React.FC = () => {
+type Props = {
+    name?: string;
+}
+const Component2: React.FC<Props> = (props) => {
     return (
         <View>
             <Text>
-                Hello from <Text style={{ color: 'blue' }}>Component1!</Text>
+                Hello <Text style={{ color: 'red' }}>{props.name}</Text>. Greetings from React
+                Native
             </Text>
         </View>
     );
@@ -12,10 +16,13 @@ const Component1: React.FC = () => {
 const styles = StyleSheet.create({
     text: {
         color: '#fff',
-        fontSize: 30,
+        fontSize: 20,
         backgroundColor: 'blue',
         padding: 6,
         alignItems: 'center'
     }
 });
-export default Component1;
+Component2.defaultProps = {
+    name: "Olumide"
+}
+export default Component2;
