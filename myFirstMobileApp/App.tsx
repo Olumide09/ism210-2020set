@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import Component1 from './src/components/Component1';
-import Component2 from './src/components/Components2';
+import Component2 from './src/components/Component2';
 const App: React.FC = () => {
   return (
     <View style={styles.container}>
