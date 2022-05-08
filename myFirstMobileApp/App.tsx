@@ -11,7 +11,7 @@ const App: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightblue',
+    backgroundColor: 'cyan',
     alignItems: 'center',
     justifyContent: 'center',
   }
