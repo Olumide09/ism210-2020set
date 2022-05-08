@@ -11,14 +11,14 @@ const App: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightblue',
+    backgroundColor: 'lightgreen',
     alignItems: 'center',
     justifyContent: 'center',
   },
   text: {
-    color: '#fff',
+    color: '#95c980',
     fontSize: 20,
-    backgroundColor: 'blue',
+    backgroundColor: 'white',
     padding: 6,
     alignItems: 'center'
   }
