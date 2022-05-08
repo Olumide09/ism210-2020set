@@ -2,11 +2,13 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import Component1 from './src/components/Component1';
 import Component2 from './src/components/Component2';
+import Component3 from './src/components/Component3';
 const App: React.FC = () => {
   return (
     <View style={styles.container}>
       <Component1 />
       <Component2 />
+      <Component3 />
     </View>
   );
 }
