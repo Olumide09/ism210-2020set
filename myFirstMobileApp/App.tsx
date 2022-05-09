@@ -4,6 +4,7 @@ import Component1 from './src/components/Component1';
 import Component2 from './src/components/Component2';
 import Component3 from './src/components/Component3';
 import Component5 from './src/components/Component5';
+import Component6 from './src/components/Component6';
 //Let's create a simple separator component that will only be used here in App.tsx
 const Separator: React.FC = () => {
   return <View style={styles.separator}></View>
@@ -19,6 +20,8 @@ const App: React.FC = () => {
       <Component3 />
       <Separator />
       <Component5 />
+      <Separator />
+      <Component6 />
     </View>
   );
 }
