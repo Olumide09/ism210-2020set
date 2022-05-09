@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView, KeyboardAvoidingView, ScrollView } from 'react-native';
 import Component1 from './src/components/Component1';
 import Component2 from './src/components/Component2';
 import Component3 from './src/components/Component3';
@@ -12,7 +12,8 @@ const Separator: React.FC = () => {
 const App: React.FC = () => {
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+    <ScrollView>
       <Component1 />
       <Separator />
       <Component2 />
@@ -22,8 +23,10 @@ const App: React.FC = () => {
       <Component5 />
       <Separator />
       <Component6 />
-    </View>
-  );
+      </ScrollView>
+      </SafeAreaView>
+     
+ );
 }
 const styles = StyleSheet.create({
   container: {
