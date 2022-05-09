@@ -30,7 +30,7 @@ const Component5: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
     const fetchData = async () => {
         try {
-            let response = await fetch(`https://jsonplaceholder.typicode.com/users/4`);
+            let response = await fetch(`https://jsonplaceholder.typicode.com/users/6`);
             let data = await response.json()
             setUser(data);
         } catch (error) {
