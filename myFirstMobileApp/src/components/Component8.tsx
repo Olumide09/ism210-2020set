@@ -18,7 +18,7 @@ const Component8: React.FC = () => {
     }, []); //the second parameter [] will ensure that this useEffect runs only once.
     return (
         <View>
-            <Text>Greetings from Component8.</Text>
+            <Text>Greetings from Component8 by Morgers😁.</Text>
             <View>
                 <Component8ShowUser users={users} />
             </View>
