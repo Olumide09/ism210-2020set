@@ -22,7 +22,7 @@ const App: React.FC = () => {
           <View style={styles.screenBody}>
             <Component1 />
             <Separator />
-            <Component2 name='Olumide' />
+            <Component2 />
             <Component2 />
             <Separator />
             <Separator />
