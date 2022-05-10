@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, SafeAreaView, KeyboardAvoidingView, ScrollView } from 'react-native';
+import { View, StyleSheet, KeyboardAvoidingView, ScrollView, Image, SafeAreaView, Platform } from 'react-native';
 import Component1 from './src/components/Component1';
 import Component2 from './src/components/Component2';
 import Component3 from './src/components/Component3';
@@ -11,37 +11,60 @@ const Separator: React.FC = () => {
   return <View style={styles.separator}></View>
 }
 const App: React.FC = () => {
-
   return (
     <SafeAreaView style={styles.container}>
-    <ScrollView>
-      <Component1 />
-      <Separator />
-      <Component2 />
-      <Separator />
-      <Component3 />
-      <Separator />
-      <Component5 />
-      <Separator />
-      <Component6 />
-      <Separator />
-      <Component7 />
-      </ScrollView>
-      </SafeAreaView>
-     
- );
+      <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={styles.container}>
+        <ScrollView>
+          <View style={styles.screenHeader}>
+            <Image style={styles.logo}
+              source={require('./src/img/PAU-Logo-Website.png')}
+            />
+          </View>
+          <View style={styles.screenBody}>
+            <Component1 />
+            <Separator />
+            <Component2 name='Olumide' />
+            <Component2 />
+            <Separator />
+            <Separator />
+            <Component5 />
+            <Separator />
+            <Component6 />
+            <Separator />
+            <Component7 />
+          </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
+    </SafeAreaView>
+  );
 }
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'lightgreen',
-    alignItems: 'center',
+    backgroundColor: 'lightblue',
+    alignItems: 'stretch',
     justifyContent: 'center',
+    padding: 15
   },
   separator: {
     backgroundColor: '#eee',
     height: 3,
     width: '100%'
+  },
+  screenHeader: {
+    flex: 1,
+    paddingTop: 27,
+    justifyContent: 'center',
+    backgroundColor: 'darkblue'
+  },
+  screenBody: {
+    flex: 6,
+    justifyContent: 'center',
+  },
+  logo: {
+    alignSelf: 'center',
+    width: 200,
+    height: 82
   }
 });
 export default App;
