@@ -13,7 +13,6 @@ const Separator: React.FC = () => {
 const App: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={styles.container}>
         <ScrollView>
           <View style={styles.screenHeader}>
             <Image style={styles.logo}
@@ -34,7 +33,6 @@ const App: React.FC = () => {
             <Component7 />
           </View>
         </ScrollView>
-      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 }
