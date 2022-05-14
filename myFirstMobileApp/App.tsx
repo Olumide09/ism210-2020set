@@ -6,13 +6,14 @@ import Component3 from './src/components/Component3';
 import Component5 from './src/components/Component5';
 import Component6 from './src/components/Component6';
 import Component7 from './src/components/Component7';
-import Component8 from './src/components/Component8';
+import Component9 from './src/components/Component9';
+//import Component8 from './src/components/Component8';
 //Let's create a simple separator component that will only be used here in App.tsx
 const Separator: React.FC = () => {
   return <View style={styles.separator}></View>
 }
 const App: React.FC = () => {
-  /*return (
+  return (
     <SafeAreaView style={styles.container}>
         <ScrollView>
           <View style={styles.screenHeader}>
@@ -32,15 +33,11 @@ const App: React.FC = () => {
             <Component6 />
             <Separator />
             <Component7 />
+            <Component9 />
           </View>
         </ScrollView>
     </SafeAreaView>
-  );*/
-  return(
-    <SafeAreaView style={[styles.container, {paddingTop: 30}]}>
-    <Component8 />
-    </SafeAreaView>
-   );
+  );
 }
 const styles = StyleSheet.create({
   container: {
