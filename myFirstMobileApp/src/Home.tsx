@@ -40,7 +40,7 @@ const Home: React.FC<Props> = ({ navigation }) => { //We are not using route her
                 )} />
             <Button title="Go to Component2"
                 onPress={() => navigation.navigate('Component2Screen')} />
-            <Button title="Go to Component4"
+            <Button title="Go to Component3"
                 onPress={() => navigation.navigate('Component3Screen')} />
             <Button title="Go to Component5"
                 onPress={() => navigation.navigate('Component5Screen')} />
@@ -69,4 +69,5 @@ const styles = StyleSheet.create({
         paddingBottom: 50
     }
 });
+
 export default Home;
