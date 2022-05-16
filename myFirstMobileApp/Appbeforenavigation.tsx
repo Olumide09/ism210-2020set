@@ -7,6 +7,7 @@ import Component5 from './src/components/Component5';
 import Component6 from './src/components/Component6';
 import Component7 from './src/components/Component7';
 import Component9 from './src/components/Component9';
+import { GestureHandlerRefContext } from '@react-navigation/stack';
 //import Component8 from './src/components/Component8';
 //Let's create a simple separator component that will only be used here in App.tsx
 const Separator: React.FC = () => {
