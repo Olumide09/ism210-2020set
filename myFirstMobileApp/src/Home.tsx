@@ -15,7 +15,7 @@ type HomeScreenStackParamList = {
     HomeScreen: undefined; //no parameters expected to be passed to route when called
     Component1Screen: { demoParam: string };
     Component2Screen: { title: string } | undefined; //means that title may be optionally passed
-    Component4Screen: undefined;
+    Component3Screen: undefined;
     Component5Screen: undefined;
     Component6Screen: undefined;
     Component7Screen: undefined;
@@ -41,7 +41,7 @@ const Home: React.FC<Props> = ({ navigation }) => { //We are not using route her
             <Button title="Go to Component2"
                 onPress={() => navigation.navigate('Component2Screen')} />
             <Button title="Go to Component4"
-                onPress={() => navigation.navigate('Component4Screen')} />
+                onPress={() => navigation.navigate('Component3Screen')} />
             <Button title="Go to Component5"
                 onPress={() => navigation.navigate('Component5Screen')} />
             <Button title="Go to Component6"
