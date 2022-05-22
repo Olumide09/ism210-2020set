@@ -17,10 +17,7 @@ type HomeScreenStackParamList = {
     Component2Screen: { title: string } | undefined; //means that title may be optionally passed
     Component3Screen: undefined;
     Component5Screen: undefined;
-    Component6Screen: undefined;
-    Component7Screen: undefined;
-    Component8Screen: undefined;
-    Component9Screen: undefined;
+
 };
 type HomeScreenNavigationProp = StackNavigationProp<HomeScreenStackParamList, 'HomeScreen'>;
 //if we are using route as well, make below available
@@ -43,15 +40,8 @@ const Home: React.FC<Props> = ({ navigation }) => { //We are not using route her
             <Button title="Go to Component3"
                 onPress={() => navigation.navigate('Component3Screen')} />
             <Button title="Go to Component5"
-                onPress={() => navigation.navigate('Component5Screen')} />
-            <Button title="Go to Component6"
-                onPress={() => navigation.navigate('Component6Screen')} />
-            <Button title="Go to Component7"
-                onPress={() => navigation.navigate('Component7Screen')} />
-            <Button title="Go to Component8"
-                onPress={() => navigation.navigate('Component8Screen')} />
-            <Button title="Go to Component9"
-                onPress={() => navigation.navigate('Component9Screen')} />
+                onPress={() => navigation.navigate('Component5Screen')} />+
+
         </SafeAreaView>
     )
 }

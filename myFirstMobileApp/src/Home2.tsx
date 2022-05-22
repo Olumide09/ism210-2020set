@@ -13,11 +13,10 @@ be passed.
  */
 type HomeScreenStackParamList = {
     HomeScreen: undefined; //no parameters expected to be passed to route when called
-    Component1Screen: { demoParam: string };
-    Component2Screen: { title: string } | undefined; //means that title may be optionally passed
-    Component3Screen: undefined;
-    Component5Screen: undefined;
-    
+    Component6Screen: undefined;
+    Component7Screen: undefined;
+    Component8Screen: undefined;
+    Component9Screen: undefined;
 };
 type HomeScreenNavigationProp = StackNavigationProp<HomeScreenStackParamList, 'HomeScreen'>;
 //if we are using route as well, make below available
@@ -30,18 +29,14 @@ type Props = {
 const Home: React.FC<Props> = ({ navigation }) => { //We are not using route here at all; so we can as well pass only navigation
     return (
         <SafeAreaView style={styles.container}>
-            <Button title="Go to Component1"
-                onPress={() => navigation.navigate('Component1Screen', {
-                    demoParam: 'This is a route demo parameter'//notice here that you can pass parameters to any navigate route
-                }
-                )} />
-            <Button title="Go to Component2"
-                onPress={() => navigation.navigate('Component2Screen')} />
-            <Button title="Go to Component3"
-                onPress={() => navigation.navigate('Component3Screen')} />
-            <Button title="Go to Component5"
-                onPress={() => navigation.navigate('Component5Screen')} />
-            
+            <Button title="Go to Component6"
+                onPress={() => navigation.navigate('Component6Screen')} />
+            <Button title="Go to Component7"
+                onPress={() => navigation.navigate('Component7Screen')} />
+            <Button title="Go to Component8"
+                onPress={() => navigation.navigate('Component8Screen')} />
+            <Button title="Go to Component9"
+                onPress={() => navigation.navigate('Component9Screen')} />
         </SafeAreaView>
     )
 }
