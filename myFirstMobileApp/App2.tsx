@@ -17,10 +17,10 @@ import { NavigationContainer } from '@react-navigation/native';
  * See Home.tsx for implementation for the said Home Component
  */
 import Home from './src/Home2';
-import Component1 from './src/components/Component1';
-import Component2 from './src/components/Component2';
-import Component3 from './src/components/Component3';
-import Component5 from './src/components/Component5';
+import Component6 from './src/components/Component6';
+import Component7 from './src/components/Component7';
+import Component8 from './src/components/Component8';
+import Component9 from './src/components/Component9';
 //Create the Stack object
 const Stack = createStackNavigator();
 //if we want to pass initial parameters to the App Stack, we can first organize the typing as we did for HomeScreen in Home.tsx
@@ -71,11 +71,11 @@ const AppStack = () => {
         }}
         >
         <Stack.Screen name="HomeScreen" component={Home} options={{title: 'App2 Home Screen'}}/>
-        <Stack.Screen name="Component1Screen" component={Component1} options={{title: 'Component 1', headerShown:
+        <Stack.Screen name="Component6Screen" component={Component6} options={{title: 'Component 6', headerShown:
        false}}/>
-        <Stack.Screen name="Component2Screen" component={Component2} options={{title: 'Component 2'}}/>
-        <Stack.Screen name="Component4Screen" component={Component3} options={{title: 'Component 3'}}/>
-        <Stack.Screen name="Component5Screen" component={Component5} options={{title: 'Component 5'}}/>
+        <Stack.Screen name="Component2Screen" component={Component7} options={{title: 'Component 7'}}/>
+        <Stack.Screen name="Component4Screen" component={Component8} options={{title: 'Component 8'}}/>
+        <Stack.Screen name="Component5Screen" component={Component9} options={{title: 'Component 9'}}/>
         </Stack.Navigator>
         )
        }
