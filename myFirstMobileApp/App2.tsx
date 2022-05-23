@@ -70,7 +70,7 @@ const AppStack = () => {
         }
         }}
         >
-        <Stack.Screen name="HomeScreen" component={Home} options={{title: 'App1 Home Screen'}}/>
+        <Stack.Screen name="HomeScreen" component={Home} options={{title: 'App2 Home Screen'}}/>
         <Stack.Screen name="Component1Screen" component={Component1} options={{title: 'Component 1', headerShown:
        false}}/>
         <Stack.Screen name="Component2Screen" component={Component2} options={{title: 'Component 2'}}/>
