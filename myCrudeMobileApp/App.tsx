@@ -55,4 +55,6 @@ useEffect(() => {
     getTransactionEntries(setTransactionEntries);
   }
 }, []);
+
+
 export default App;
