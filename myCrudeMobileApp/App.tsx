@@ -1,9 +1,10 @@
 import 'reflect-metadata';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { TransactionEntry } from './src/entities/transaction-entry.entity';
 import { Connection } from 'typeorm/connection/Connection';
 import { createConnection } from 'typeorm';
+import { getTransactionEntries } from './src/services/transaction-entry.service';
 
 const [defaultConnection, setConnection] = useState<Connection | null>(null);
 const [transactionEntries, setTransactionEntries] = useState<TransactionEntry[]>([]);
@@ -45,6 +46,13 @@ const setupConnection = useCallback(async () => {
     getTransactionEntries(setTransactionEntries);
   } catch (error) {
     console.log(error);
+  }
+}, []);
+useEffect(() => {
+  if (!defaultConnection) {
+    setupConnection();
+  } else {
+    getTransactionEntries(setTransactionEntries);
   }
 }, []);
 export default App;
