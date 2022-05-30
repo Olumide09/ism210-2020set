@@ -3,4 +3,8 @@ module.exports = function(api) {
   return {
     presets: ['babel-preset-expo'],
   };
+  plugins: [
+    '@babel/transform-react-jsxsource',
+    'babel-plugin-transform-typescriptmetadata',
+    ]
 };
