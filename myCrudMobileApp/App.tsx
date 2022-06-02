@@ -1,6 +1,10 @@
 import 'reflect-metadata';
-import React from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
+import { Connection } from 'typeorm';
+import { TransactionEntry } from './src/entities/transaction-entry.entity';
+const [defaultConnection, setConnection] = useState<Connection | null>(null);
+const [transactionEntries, setTransactionEntries] = useState<TransactionEntry[]>([]);
 const App: React.FC = () => {
 
   return (

@@ -4,6 +4,7 @@
   "experimentalDecorators": true,
   "strictPropertyInitialization": false,
   "compilerOptions": {
+    "experimentalDecorators": true,
     "strict": true
   }
 }
