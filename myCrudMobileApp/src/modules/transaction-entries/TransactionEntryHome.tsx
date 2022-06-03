@@ -75,7 +75,7 @@ const TransactionEntryHome: React.FC<Props> = ({ dataSource }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#1ED386',
         alignItems: 'center',
         justifyContent: 'center',
     },
