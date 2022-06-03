@@ -59,7 +59,7 @@ const TransactionEntryHome: React.FC<Props> = ({ dataSource }) => {
                     () => (<View style={{
                         backgroundColor: '#ccc', paddingBottom: 30, paddingTop: 3, alignContent:
                             "flex-start"
-                    }}><Text style={{ fontSize: 15, fontStyle: "italic" }}>Copyright: Pius Onobhayedo</Text></View>)
+                    }}><Text style={{ fontSize: 15, fontStyle: "italic" }}>Copyright: Olumide Olaoye Daniel</Text></View>)
                 }
                 keyExtractor={(item, index) => index.toString()}
                 ItemSeparatorComponent={
