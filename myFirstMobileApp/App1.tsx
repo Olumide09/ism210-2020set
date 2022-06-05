@@ -94,4 +94,4 @@ const styles = StyleSheet.create({
  paddingBottom: 50
  }
 });
-export default App;         
+//export default App;         
